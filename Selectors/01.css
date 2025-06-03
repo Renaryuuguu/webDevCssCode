@@ -1,0 +1,49 @@
+article p:first-of-type {
+  color: red;
+  font-size: 1.5em;
+}
+* {
+  color: hotpink;
+}
+section {
+  color: blue;
+}
+
+.my-class {
+  color: green;
+}
+/* 选择所有带有 class="my-class" 的元素 */
+[data-type="primary"] {
+  color: orange;
+}
+/* 选择所有带有 data-type="primary" 属性的元素 不区分大小写 */
+[data-type="primary" i] {
+  color: pink;
+}
+/* 选择所有带有 data-any 属性的元素 */
+[data-any] {
+  color: purple;
+}
+/* 包含 example.com 的 href 属性 */
+[href*="example.cn"] {
+  color: skyblue;
+}
+/* 以 http:// 开头的 href 属性 */
+[href^="http://"]
+{
+  color: darkblue;
+}
+/* 以 .com 结尾的 href 属性 */
+[href$=".com"] {
+  color: darkgreen;
+}
+
+/* 伪类选择器 */
+a:hover {
+  color: red;
+}
+/* 复杂选择器 */
+/* 选择父元素为 p 且子元素为 strong 的元素 */
+p > strong {
+  color: yellow;
+}
